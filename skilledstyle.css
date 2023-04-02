@@ -13,38 +13,39 @@ body {
 .container-item1 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 343px;
   height: 48px;
-  margin: 16px;
+  margin: 16px 16px 0 0;
 }
 
 .skilled {
-  display: flex;
   font-size: 28px;
   font-family: Plus Jakarta Sans;
   font-weight: 800;
   line-height: 35.28px;
-  margin-top: 5px;
+  margin: 0;
   color: #13183F;
 }
 
 .started {
-  display: flex;
-  display: inline;
   width: 140px;
   height: 48px;
   border: none;
   border-radius: 28px;
   background-color: #13183F;
-  text-align: center;
   font-size: 16px;
   font-family: Plus Jakarta Sans;
   font-weight: 700;
-  line-height: 28px;
+  padding: 0;
   z-index: 1;
   cursor: pointer;
   color: #FFFFFF;
-  transition: background-color 0.15s;
+  transition: background-color 0.5s;
+}
+
+.started:hover {
+  background-color: #666CA3;
 }
 
 .container-item2 {
@@ -52,6 +53,7 @@ body {
   flex-direction: column;
   width: 343px;
   height: 101px;
+  margin-top: 38px;
   margin-left: 8px;
 }
 
@@ -60,12 +62,13 @@ body {
   font-family: Plus Jakarta Sans;
   font-weight: 800;
   line-height: 50.4px;
+  margin: 0;
   color: #13183F;
 }
 
 .container-item3 {
   height: 78px;
-  margin-top: 50px;
+  margin-top: 26px;
   margin-left: 8px;
 }
 
@@ -75,6 +78,7 @@ body {
   font-family: Plus Jakarta Sans;
   font-weight: 500;
   line-height: 26px;
+  margin: 0;
   color: #83869A;
 }
 
@@ -85,6 +89,7 @@ body {
   border: none;
   margin-top: 24px;
   margin-left: 8px;
+  padding: 0;
   font-size: 16px;
   font-family: Plus Jakarta Sans;
   font-weight: 700;
@@ -92,7 +97,11 @@ body {
   cursor: pointer;
   color: white;
   background-image: linear-gradient(#FF6F48, #F02AA6);
-  transition: opacity 0.15s;
+  transition: opacity 0.5s;
+}
+
+.started2:hover {
+  opacity: 0.5;
 }
 
 .tabletavatar {
@@ -104,6 +113,9 @@ body {
 }
 
 .container-item5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 375px;
 }
 
@@ -113,7 +125,6 @@ body {
   height: 120px;
   border-radius: 10px;
   margin-top: 66px;
-  margin-left: 16px;
   background-image: linear-gradient(#FF6F48, #F02AA6);
 }
 
@@ -128,7 +139,7 @@ body {
   color: white;
 }
 
-.item1 {
+.item {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -136,16 +147,16 @@ body {
   height: 220px;
   padding: 28px;
   background-color: white;
-  box-shadow: rgba(6, 22, 141, 0.04);
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
 }
 
-.runningicon {
+.img {
   width: 56px;
   height: 56px;
   margin-top: -50px;
 }
 
-.animation {
+.a {
   display: flex;
   display: block;
   font-size: 20px;
@@ -168,37 +179,19 @@ body {
   color: #83869A;
 }
 
-.item1start {
+.get {
   font-size: 18px;
   font-family: Plus Jakarta Sans;
   font-weight: 700;
+  width: 104px;
   margin-top: 24px;
   cursor: pointer;
   color: #F74780;
   transition: color 0.15s;
 }
 
-.item2 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-top: 40px;
-  padding: 28px;
-  background-color: white;
-  box-shadow: rgba(6, 22, 141, 0.04);
-}
-
-.pictureicon {
-  width: 56px;
-  height: 56px;
-  margin-top: -50px;
-}
-
-.design {
-  font-size: 20px;
-  font-family: Plus Jakarta Sans;
-  font-weight: 800;
-  color: #13183F;
+.get:hover {
+  color: #FFA7C3;
 }
 
 .item2paragraph {
@@ -212,39 +205,6 @@ body {
   color: #83869A;
 }
 
-.item2start {
-  font-size: 18px;
-  font-family: Plus Jakarta Sans;
-  font-weight: 700;
-  margin-top: 24px;
-  cursor: pointer;
-  color: #F74780;
-  transition: color 0.15s;
-}
-
-.item3 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-top: 40px;
-  padding: 28px;
-  background-color: white;
-  box-shadow: rgba(6, 22, 141, 0.04);
-}
-
-.cameraicon {
-  width: 56px;
-  height: 56px;
-  margin-top: -50px;
-}
-
-.photography {
-  font-size: 20px;
-  font-family: Plus Jakarta Sans;
-  font-weight: 800;
-  color: #13183F;
-}
-
 .item3paragraph {
   font-size: 16px;
   font-family: Plus Jakarta Sans;
@@ -254,39 +214,6 @@ body {
   height: 78px;
   margin-top: 8px;
   color: #83869A;
-}
-
-.item3start {
-  font-size: 18px;
-  font-family: Plus Jakarta Sans;
-  font-weight: 700;
-  margin-top: 24px;
-  cursor: pointer;
-  color: #F74780;
-  transition: color 0.15s;
-}
-
-.item4 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-top: 40px;
-  padding: 28px;
-  background-color: white;
-  box-shadow: rgba(6, 22, 141, 0.04);
-}
-
-.cryptoicon {
-  width: 56px;
-  height: 56px;
-  margin-top: -50px;
-}
-
-.crypto {
-  font-size: 20px;
-  font-family: Plus Jakarta Sans;
-  font-weight: 800;
-  color: #13183F;
 }
 
 .item4paragraph {
@@ -300,39 +227,6 @@ body {
   color: #83869A;
 }
 
-.item4start {
-  font-size: 18px;
-  font-family: Plus Jakarta Sans;
-  font-weight: 700;
-  margin-top: 24px;
-  cursor: pointer;
-  color: #F74780;
-  transition: color 0.15s;
-}
-
-.item5 {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-top: 40px;
-  padding: 28px;
-  background-color: white;
-  box-shadow: rgba(6, 22, 141, 0.04);
-}
-
-.carticon {
-  width: 56px;
-  height: 56px;
-  margin-top: -50px;
-}
-
-.business {
-  font-size: 20px;
-  font-family: Plus Jakarta Sans;
-  font-weight: 800;
-  color: #13183F;
-}
-
 .item5paragraph {
   font-size: 16px;
   font-family: Plus Jakarta Sans;
@@ -344,31 +238,20 @@ body {
   color: #83869A;
 }
 
-.item5start {
-  font-size: 18px;
-  font-family: Plus Jakarta Sans;
-  font-weight: 700;
-  margin-top: 24px;
-  cursor: pointer;
-  color: #F74780;
-  transition: color 0.15s;
-}
-
 footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #13183F;
-  margin-top: 80px;
+  width: 100%;
   height: 120px;
-  width: 100%
+  margin-top: 80px;
+  background-color: #13183F;
 }
 
 .foot {
   display: flex;
   flex-direction: row;
   width: 343px;
-  height: 48px;
 }
 
 .skilled1 {
@@ -376,15 +259,11 @@ footer {
   font-family: Plus Jakarta Sans;
   font-weight: 800;
   line-height: 60px;
-  margin-top: -6px;
   color: #FFFFFF;
 }
 
 .footstart {
-  display: flex;
   align-self: center;
-  align-items: center;
-  justify-content: center;
   width: 140px;
   height: 48px;
   border: none;
@@ -399,13 +278,11 @@ footer {
   transition: 0.15s;
 }
 
+.footstart:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
 
 @media (min-width: 768px) {
-  body {
-    display: flex;
-    align-items: center;
-  }
-
   .container-item1 {
     width: 689px;
   }
@@ -414,12 +291,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 398px;
-    margin-left: 39px;
-  }
-
-  .container-item3 {
-    margin-top: 30px;
-    margin-bottom: 24px;
+    margin-top: 99px;
   }
 
   .avatar {
@@ -428,19 +300,21 @@ footer {
 
   .tabletavatar {
     display: flex;
-    display: inline;
     position: absolute;
     top: -15px;
     right: 0;
   }
 
   .container-item2 {
-    display: flex;
+    margin: 0;
   }
 
   .container-item3 {
-    display: flex;
-    display: inline;
+    margin-left: 0;
+  }
+
+  .started2 {
+    margin-left: 0;
   }
 
   .container-item5 {
@@ -450,7 +324,7 @@ footer {
     gap: 11px;
     width: 698px;
     height: 999px;
-    margin-top: 186px;
+    margin-top: 166px;
   }
 
   .adback {
@@ -471,26 +345,43 @@ footer {
     justify-content: space-around;
     width: 100%;
   }
-
 }
 
 @media (min-width: 1440px) {
   .container-item1 {
     width: 1109px;
+    margin-left: 21px;
   }
 
-  .started:hover {
-    background-color: #666CA3;
-  }
-
-  .started2:hover {
-    opacity: 0.5;
+  .started2 {
+    margin-top: 40px;
   }
 
   .tablet {
     width: 457px;
-    height: 359px;
-    margin-left: 10px;
+    margin-top: 178px;
+  }
+
+  .container-item2 {
+    width: 457px;
+    height: 143px;
+  }
+
+  .budget {
+    font-size: 56px;
+    line-height: 70.56px;
+  }
+
+  .container-item3 {
+    width: 445px;
+    height: 84px;
+  }
+
+  .main-paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    width: 445px;
+    height: 84px;
   }
 
   .tabletavatar {
@@ -508,48 +399,79 @@ footer {
     width: 1110px;
     height: 837px;
     flex-wrap: wrap;
-    margin-top: 283px;
-    gap: 30px;
+    margin-top: 226px;
+    column-gap: 30px;
+    row-gap: 80px;
   }
 
-  .item1start:hover {
-    color: #FFA7C3;
+  .adback {
+    width: 350px;
+    height: 322px;
+    margin: 0;
   }
 
-  .item2 {
-    height: 220px;
-    margin-top: 63px;
+  .ad {
+    font-size: 32px;
+    line-height: 40px;
+    height: 120px;
   }
 
-  .item2start:hover {
-    color: #FFA7C3;
+  .item {
+    position: relative;
+    width: 350px;
+    height: 322px;
+    padding: 0;
+    margin: 0;
   }
 
-  .item3 {
-    height: 232px;
+  .a {
+    font-size: 24px;
+    line-height: 30.24px;
+    margin: 64px 0 0 32px;
   }
 
-  .item3start:hover {
-    color: #FFA7C3;
+  .img {
+    position: absolute;
+    top: 24px;
+    left: 32px;
   }
 
-  .item4 {
-    height: 232px;
+  .item1paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    height: 112px;
+    margin: 28px 0 0 32px;
   }
 
-  .item4start:hover {
-    color: #FFA7C3;
+  .item2paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    height: 84px;
+    margin: 28px 0 0 32px;
   }
 
-  .item5 {
-    height: 232px;
+  .item3paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    height: 84px;
+    margin: 28px 0 0 32px;
   }
 
-  .item5start:hover {
-    color: #FFA7C3;
+  .item4paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    height: 112px;
+    margin: 28px 0 0 32px;
   }
 
-  .footstart:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+  .item5paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    height: 112px;
+    margin: 28px 0 0 32px;
+  }
+
+  .get {
+    margin: 28px 0 0 32px;
   }
 }
