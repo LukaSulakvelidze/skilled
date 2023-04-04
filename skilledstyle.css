@@ -472,6 +472,14 @@ footer {
   }
 
   .get {
-    margin: 28px 0 0 32px;
+    margin: 24px 0 0 32px;
+  }
+
+  .item2start {
+    margin-top: 52px;
+  }
+
+  .item3start {
+    margin-top: 52px;
   }
 }
